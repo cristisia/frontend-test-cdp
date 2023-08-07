@@ -1,24 +1,19 @@
-import logo from './logo.svg';
+// import logo from './logo.png'
 import './App.css';
+import Graph from './Graph.js';
+import { Chart } from 'chart.js/auto';
+import { CategoryScale } from 'chart.js';
+import { useEffect } from 'react';
+
+Chart.register(CategoryScale)
 
 function App() {
+  useEffect(() => {
+    document.title = "Game's Graph";
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Graph />
   );
 }
 
