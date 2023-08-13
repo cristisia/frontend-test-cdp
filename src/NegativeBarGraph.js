@@ -25,15 +25,23 @@ const NegativeBarGraph = () => {
         datasets: [{
             label: 'Negative Sentiment Count',
             data: sentimentCounts,
-            backgroundColor: 'rgba(255, 0, 0, 0.5)',
+            backgroundColor: 'rgba(255, 0, 0, 0.6)',
             borderColor: 'rgba(255, 0, 0, 1)',
             borderWidth: 1,
         }]
     };
 
+    const option = {
+        plugins: {
+          legend: {
+            display: false
+          }
+        }
+    }
+
     return (
         <div>
-            <Bar data={chartData} />
+            <Bar data={chartData} options={option}/>
         </div>
     );
 };

@@ -1,0 +1,25 @@
+.navbar{
+    background-color: rgb(41, 41, 41);
+    height: 70px;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.brand{
+    color:rgb(247, 247, 247);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 30px;
+    font-size: 23px;
+}
+
+.item{
+    color:rgb(247, 247, 247);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    text-align: right;
+    margin-left: 35px;
+}

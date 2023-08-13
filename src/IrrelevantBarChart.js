@@ -25,15 +25,23 @@ const IrrelevantBarGraph = () => {
         datasets: [{
             label: 'Irrelevant Sentiment Count',
             data: sentimentCounts,
-            backgroundColor: 'rgba(255, 255, 0, 0.5)',
-            borderColor: 'rgba(255, 255, 0, 1)',
+            backgroundColor: 'rgba(255, 230, 0, 0.6)',
+            borderColor: 'rgba(255, 230, 0, 1)',
             borderWidth: 1,
         }]
     };
 
+    const option = {
+        plugins: {
+          legend: {
+            display: false
+          }
+        }
+    }
+
     return (
         <div>
-            <Bar data={chartData} />
+            <Bar data={chartData} options={option}/>
         </div>
     );
 };

@@ -9,7 +9,7 @@ Chart.register(CategoryScale)
 
 function App() {
   useEffect(() => {
-    document.title = "Game's Graph";
+    document.title = "Game's Dashboard";
   }, [])
 
   return (
